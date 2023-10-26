@@ -45,18 +45,6 @@ a {
     }
 }
 
-/* Formato paisagem */
-
-@media (max-width: 62em) and (orientation: landscape) {
-    /* Estilos específicos para tela paisagem com largura intermediária */
-    .lista-menu {
-        margin-right: 1em; /* Aumente a margem para paisagem */
-    }
-    .info-usuario {
-        margin-left: 1em; /* Aumente a margem para paisagem */
-    }
-}
-
 /*************************Fim do Design Responsivo*************************/
 
 /*MAIN*/
@@ -294,13 +282,13 @@ th, td{
     }
 
     .produtos-da-loja {
-        flex-direction: column; /* Um produto por coluna em telas menores */
+        flex-direction: column;
     }
 
     .produtos-da-loja li {
         margin: auto;
-        width: 100%; /* Cada produto em sua própria coluna (linha) */
-        height: auto; /* Altura automática para se ajustar ao conteúdo */
+        width: 100%;
+        height: auto;
     }
 
     .titulo-principal {
@@ -309,32 +297,6 @@ th, td{
     }
     .subtitulo-principal {
         font-size: 1.75em;
-        padding-bottom: 0.625em;
-    }
-}
-
-/* Ajustes para tela em formato paisagem */
-@media (max-width: 62em) and (orientation: landscape) {
-    .nova-colecao {
-        height: auto; /* Mantém a altura automática */
-    }
-
-    .produtos-da-loja {
-        flex-direction: row; /* De volta ao layout em linha */
-    }
-
-    .produtos-da-loja li {
-        margin: 0 20px; /* Adicione margens para criar espaçamento entre os produtos */
-        width: calc(33.33% - 40px); /* Três colunas com margens */
-        height: auto; /* Altura automática para se ajustar ao conteúdo */
-    }
-
-    .titulo-principal {
-        font-size: 2.5em; /* Aumenta o tamanho da fonte para paisagem */
-        padding-top: 0.938em;
-    }
-    .subtitulo-principal {
-        font-size: 2em; /* Aumenta o tamanho da fonte para paisagem */
         padding-bottom: 0.625em;
     }
 }
@@ -366,33 +328,6 @@ th, td{
     }
 }
 
-/* Ajustes para tela em formato paisagem */
-@media (max-width: 62em) and (orientation: landscape) {
-    .secao-clientes {
-        height: auto; /* Mantém a altura automática */
-    }
-    .titulo-sessao {
-        font-size: 2em; /* Aumenta o tamanho da fonte para paisagem */
-    }
-    .estrutura-comentarios {
-        flex-wrap: nowrap; /* Restaura o layout em linha */
-        gap: 0;
-    }
-    .feedback {
-        width: 427px; /* Defina a largura específica para paisagem */
-    }
-    .nome-cliente {
-        font-size: 1.75em; /* Aumenta o tamanho da fonte para paisagem */
-        margin-left: 26px; /* Adiciona margem à esquerda */
-        margin-top: 0; /* Remove a margem superior */
-    }
-    .data-feedback {
-        font-size: 1.25em; /* Aumenta o tamanho da fonte para paisagem */
-        margin-left: 26px; /* Adiciona margem à esquerda */
-        margin-bottom: 0; /* Remove a margem inferior */
-    }
-}
-
 /*Pedidos*/
 
 @media (max-width: 48em) {
@@ -408,23 +343,6 @@ th, td{
         padding-top: 0.625em;
         padding-bottom: 0.75em;
         font-size: 0.875em;
-    }
-}
-
-/* Ajustes para tela em formato paisagem */
-@media (max-width: 62em) and (orientation: landscape) {
-    .secao-pedidos {
-        height: auto; /* Mantém a altura automática */
-    }
-    
-    .tabela {
-        overflow-x: auto;
-    }
-    th, td {
-        padding-left: 0.313em;
-        padding-top: 0.625em;
-        padding-bottom: 0.75em;
-        font-size: 1em; /* Aumenta o tamanho da fonte para paisagem */
     }
 }
 
@@ -447,35 +365,13 @@ th, td{
         width: 90%;
         justify-content: center;
         font-size: 1.125em;
-        margin-top: 1.25em; /* Ajuste o espaço entre o botão e outros elementos */
+        margin-top: 1.25em;
     }
 }
 
 @media (max-width: 48em) {
     .secao-faleconosco {
-        height: auto; /* Defina uma altura mais apropriada ou deixe-a automática */
-    }
-}
-
-/* Ajustes para tela em formato paisagem */
-@media (max-width: 62em) and (orientation: landscape) {
-    .formulario {
-        width: 90%;
-        flex-wrap: wrap;
-        margin-left: 0.625em;
-        margin-right: 0.625em;
-    }
-    .titulo-form, .caixa-form, .caixa-msg {
-        width: 90%;
-    }
-    .botao-enviar {
-        width: 90%;
-        justify-content: center;
-        font-size: 1.125em;
-        margin-top: 1.25em; /* Ajuste o espaço entre o botão e outros elementos */
-    }
-    .secao-faleconosco {
-        height: auto; /* Defina uma altura mais apropriada ou deixe-a automática */
+        height: auto;
     }
 }
 
@@ -508,19 +404,6 @@ th, td{
 @media (max-width: 48em) {
     .texto-rodape {
         font-size: 1em; /* Reduza o tamanho da fonte */
-    }
-}
-
-/* Ajustes para tela em formato paisagem */
-@media (max-width: 62em) and (orientation: landscape) {
-    .rodape {
-        flex-direction: row; /* De volta ao layout em linha */
-        align-items: center; /* Alinhamento centralizado */
-        padding: 0.625em;
-    }
-
-    .texto-rodape {
-        font-size: 1em; /* Mantenha o tamanho da fonte para paisagem */
     }
 }
 /*************************Fim do Design Responsivo*************************/
