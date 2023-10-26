@@ -277,16 +277,17 @@ th, td{
 /**Nova Coleção**/
 @media (max-width: 768px) {
     .nova-colecao {
-        height: auto; /* Defina a altura como automática para se ajustar ao conteúdo */
+        height: auto;
     }
 
     .produtos-da-loja {
-        flex-wrap: wrap; /* Permita que os produtos fluam verticalmente */
+        flex-direction: column; /* Um produto por coluna em telas menores */
     }
 
     .produtos-da-loja li {
-        margin: 0 20px; /* Ajuste as margens para telas menores */
-        width: calc(50% - 40px); /* 2 colunas, com margens */
+        margin: 0; /* Remova as margens para ter apenas um produto por linha */
+        width: 100%; /* Cada produto em sua própria coluna (linha) */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
     }
 
     .titulo-principal {
@@ -301,6 +302,9 @@ th, td{
 
 /**Clientes**/
 @media (max-width: 768px) {
+    .secao-clientes {
+        height: auto;
+    }
     .titulo-sessao {
         font-size: 28px;
     }
@@ -325,6 +329,10 @@ th, td{
 /*Pedidos*/
 
 @media (max-width: 768px) {
+    .secao-pedidos {
+        height: auto;
+    }
+    
     .tabela {
         overflow-x: auto;
     }
