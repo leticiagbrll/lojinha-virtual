@@ -11,15 +11,15 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 100px;
+    height: 6.25em;
     }
 
 .lista-menu{
     background-color: #FFFFFF;
     display: inline-block;
-    padding: 10px;
-    border-radius: 50px;
-    margin-right: 10px;
+    padding: 0.625em;
+    border-radius: 3.125em;
+    margin-right: 0.625em;
 }
 
 a {
@@ -28,7 +28,7 @@ a {
 
 .info-usuario{
     color: #FFFFFF;
-    margin-left: 30px;   
+    margin-left: 1.875em;   
 }
 
 .nome{
@@ -36,14 +36,27 @@ a {
 }
 
 /*************************Início do Design Responsivo*************************/
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .lista-menu {
         margin-right: 0;
     }
     .info-usuario {
-        margin-left: 10px;
+        margin-left: 0.625em;
     }
 }
+
+/* Formato paisagem */
+
+@media (max-width: 62em) and (orientation: landscape) {
+    /* Estilos específicos para tela paisagem com largura intermediária */
+    .lista-menu {
+        margin-right: 1em; /* Aumente a margem para paisagem */
+    }
+    .info-usuario {
+        margin-left: 1em; /* Aumente a margem para paisagem */
+    }
+}
+
 /*************************Fim do Design Responsivo*************************/
 
 /*MAIN*/
@@ -54,7 +67,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 532px;
+    height: 33.25em;
 }
 
 .titulo-subtitulo{
@@ -64,16 +77,16 @@ a {
 
 .titulo-principal {
     font-family: 'Abril Fatface', serif;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 400;
-    padding-top: 29px;
-    height: 54px;
+    padding-top: 1.813em;
+    height: 3.375em;
 }
 
 .subtitulo-principal {
-    font-size: 36px;
+    font-size: 2.25em;
     font-weight: 400;
-    padding-bottom: 27px;
+    padding-bottom: 1.688em;
 }
 
 .negrito {
@@ -87,12 +100,12 @@ a {
 }
 
 .produtos-da-loja li{
-    margin-bottom: 35px;
-    margin-left: 46px;
-    margin-right: 46px;
+    margin-bottom: 2.188em;
+    margin-left: 2.875em;
+    margin-right: 2.875em;
     list-style: none;
-    width: 284px;
-    height: 284px;
+    width: 17.75em;
+    height: 17.75em;
     overflow: hidden;
 }
 
@@ -106,28 +119,28 @@ a {
     color: #0075FF;
     text-decoration-line: underline;
     text-align: center;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 400;
-    height: 22px;
-    margin-bottom: 35px;
+    height: 1.375em;
+    margin-bottom: 2.188em;
 }
 
 /**CLIENTES**/
 .secao-clientes {
     background-color: #AEBFEB;
     color: #200065; 
-    height: 616px;
-    padding-left: 50px;
-    padding-right: 56px;
+    height: 38.5em;
+    padding-left: 3.125em;
+    padding-right: 3.5em;
 }
 
 .titulo-sessao {
     text-align: center;
     font-family: 'Abril Fatface', serif;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 400;
-    padding-top: 37px;
-    margin-bottom: 34px;
+    padding-top: 2.313em;
+    margin-bottom: 2.125em;
 }
 
 .estrutura-comentarios{
@@ -136,53 +149,53 @@ a {
     justify-content: center;
     width: 100%;
     box-sizing: border-box;
-    margin-bottom: 75px; 
+    margin-bottom: 4.688em; 
 }
 
 .feedback {
     background-color: #D4E0FF;
     color: #1E1E1E;
-    margin-left: 26px;
-    width: 427px;
-    height: 427px;
+    margin-left: 1.625em;
+    width: 26.688em;
+    height: 26.688em;
 }
 
 .nome-cliente {
     font-family: 'Abril Fatface', serif;
-    font-size: 32px;
+    font-size: 2em;
     font-weight: 400;
-    margin-left: 48px;
-    margin-top: 38px
+    margin-left: 3em;
+    margin-top: 2.375em
 }
 
 .data-feedback{
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 400;
     font-style: italic;
-    margin-left: 48px;
-    margin-bottom: 52px;
+    margin-left: 3em;
+    margin-bottom: 3.25em;
 }
 
 .relato-cliente {
     text-align: justify;
-    font-size: 24px;
-    padding-left: 45px;
-    padding-right: 26px;
-    padding-bottom: 116px;
+    font-size: 1.5em;
+    padding-left: 2.813em;
+    padding-right: 1.625em;
+    padding-bottom: 7.25em;
 }
 
 /**PEDIDOS**/
 .secao-pedidos{
     background-color: #D7E2FF;
     color: #200065;
-    height: 441px;
+    height: 27.563em;
 }
 
 .tabela {
     background-color: #FFFFFF;
     margin: 0 auto;
     border-collapse: collapse;
-    border-radius: 4px;    
+    border-radius: 0.25em;    
 }
 
 thead{
@@ -190,14 +203,14 @@ thead{
 }
 
 th, td{
-    width: 230px;
-    height: 18px;
-    padding-left: 10px;
-    padding-top: 15px;
-    padding-bottom: 17px;
+    width: 14.375em;
+    height: 1.125em;
+    padding-left: 0.625em;
+    padding-top: 0.938em;
+    padding-bottom: 1.063em;
     text-align: left;
     color: #1E1E1E;
-    border: 1px solid #1E1E1E;
+    border: 0.063em solid #1E1E1E;
     border-collapse: collapse;
 }
 
@@ -205,44 +218,44 @@ th, td{
 .secao-faleconosco{
     background-color: #AEBFEB;
     color: #200065;
-    height: 685px;
-    padding: 29px 20px 35px;
+    height: 42.813em;
+    padding: 1.813em 1.25em 2.188em;
 }
 
 .formulario{
-    width: 1141px;
+    width: 71.313em;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .titulo-form{
-    width: 1141px;
-    height: 28px;
+    width: 71.313em;
+    height: 1.75em;
     color: #000000;
-    font-size: 14px;
+    font-size: 0.875em;
     font-weight: 400;
 }
 
 .caixa-form {
     align-items: flex-start;
-    padding: 10px 15px;
-    border: 1px solid #AAAAAD;
-    border-radius: 10px;
+    padding: 0.625em 0.938em;
+    border: 0.063em solid #AAAAAD;
+    border-radius: 0.625em;
     background: #FFFFFF;
-    width: 1141px;
+    width: 71.313em;
 }
 
 .caixa-msg{
     display: flex;
-    width: 1141px;
-    height: 112px;
+    width: 71.313em;
+    height: 7em;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
-    padding: 10px 15px;
-    border: 1px solid #AAAAAD;
-    border-radius: 10px;
+    padding: 0.625em 0.938em;
+    border: 0.063em solid #AAAAAD;
+    border-radius: 0.625em;
     background: #FFFFFF;
 }
 
@@ -250,8 +263,8 @@ th, td{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 49px;
-    margin-bottom: 78px;
+    padding-top: 3.063em;
+    margin-bottom: 4.875em;
 }
 
 .botao-enviar{
@@ -259,23 +272,23 @@ th, td{
     align-items: center;
     align-self: stretch;
     justify-content: center;
-    width: 270px;
-    height: 48px;
-    padding: 10px 15px;
+    width: 16.875em;
+    height: 3em;
+    padding: 0.625em 0.938;
     background-color: #313131;
-    border: 1px solid #313131;
-    border: 1px solid #313131;
-    border-radius: 10px;
+    border: 0.063em solid #313131;
+    border: 0.063em solid #313131;
+    border-radius: 0.625em;
     color: #FFFFFF;
     text-align: center;
-    font-size: 22px;
+    font-size: 1.375em;
     font-weight: 400;
 }
 
 /*************************Inicio do Design Responsivo*************************/
 
 /**Nova Coleção**/
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .nova-colecao {
         height: auto;
     }
@@ -291,45 +304,98 @@ th, td{
     }
 
     .titulo-principal {
-        font-size: 32px;
-        padding-top: 15px;
+        font-size: 2em;
+        padding-top: 0.938em;
     }
     .subtitulo-principal {
-        font-size: 28px;
-        padding-bottom: 10px;
+        font-size: 1.75em;
+        padding-bottom: 0.625em;
+    }
+}
+
+/* Ajustes para tela em formato paisagem */
+@media (max-width: 62em) and (orientation: landscape) {
+    .nova-colecao {
+        height: auto; /* Mantém a altura automática */
+    }
+
+    .produtos-da-loja {
+        flex-direction: row; /* De volta ao layout em linha */
+    }
+
+    .produtos-da-loja li {
+        margin: 0 20px; /* Adicione margens para criar espaçamento entre os produtos */
+        width: calc(33.33% - 40px); /* Três colunas com margens */
+        height: auto; /* Altura automática para se ajustar ao conteúdo */
+    }
+
+    .titulo-principal {
+        font-size: 2.5em; /* Aumenta o tamanho da fonte para paisagem */
+        padding-top: 0.938em;
+    }
+    .subtitulo-principal {
+        font-size: 2em; /* Aumenta o tamanho da fonte para paisagem */
+        padding-bottom: 0.625em;
     }
 }
 
 /**Clientes**/
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .secao-clientes {
         height: auto;
     }
     .titulo-sessao {
-        font-size: 28px;
+        font-size: 1.75em;
     }
     .estrutura-comentarios {
         flex-wrap: wrap;
-        gap: 10px;
+        gap: 0.625em;
     }
     .feedback {
         width: 100%;
     }
     .nome-cliente {
-        font-size: 24px;
+        font-size: 1.5em;
         margin-left: 0;
-        margin-top: 20px;
+        margin-top: 1.25em;
     }
     .data-feedback {
-        font-size: 16px;
+        font-size: 1em;
         margin-left: 0;
-        margin-bottom: 20px;
+        margin-bottom: 1.25em;
+    }
+}
+
+/* Ajustes para tela em formato paisagem */
+@media (max-width: 62em) and (orientation: landscape) {
+    .secao-clientes {
+        height: auto; /* Mantém a altura automática */
+    }
+    .titulo-sessao {
+        font-size: 2em; /* Aumenta o tamanho da fonte para paisagem */
+    }
+    .estrutura-comentarios {
+        flex-wrap: nowrap; /* Restaura o layout em linha */
+        gap: 0;
+    }
+    .feedback {
+        width: 427px; /* Defina a largura específica para paisagem */
+    }
+    .nome-cliente {
+        font-size: 1.75em; /* Aumenta o tamanho da fonte para paisagem */
+        margin-left: 26px; /* Adiciona margem à esquerda */
+        margin-top: 0; /* Remove a margem superior */
+    }
+    .data-feedback {
+        font-size: 1.25em; /* Aumenta o tamanho da fonte para paisagem */
+        margin-left: 26px; /* Adiciona margem à esquerda */
+        margin-bottom: 0; /* Remove a margem inferior */
     }
 }
 
 /*Pedidos*/
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .secao-pedidos {
         height: auto;
     }
@@ -338,37 +404,76 @@ th, td{
         overflow-x: auto;
     }
     th, td {
-        padding-left: 5px;
-        padding-top: 10px;
-        padding-bottom: 12px;
-        font-size: 14px;
+        padding-left: 0.313em;
+        padding-top: 0.625em;
+        padding-bottom: 0.75em;
+        font-size: 0.875em;
+    }
+}
+
+/* Ajustes para tela em formato paisagem */
+@media (max-width: 62em) and (orientation: landscape) {
+    .secao-pedidos {
+        height: auto; /* Mantém a altura automática */
+    }
+    
+    .tabela {
+        overflow-x: auto;
+    }
+    th, td {
+        padding-left: 0.313em;
+        padding-top: 0.625em;
+        padding-bottom: 0.75em;
+        font-size: 1em; /* Aumenta o tamanho da fonte para paisagem */
     }
 }
 
 /*Fale Conosco*/
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .formulario {
         width: 90%;
         flex-wrap: wrap;
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 0.625em;
+        margin-right: 0.625em;
     }
     .titulo-form, .caixa-form, .caixa-msg {
         width: 90%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .botao-enviar {
         width: 90%;
         justify-content: center;
-        font-size: 18px;
-        margin-top: 20px; /* Ajuste o espaço entre o botão e outros elementos */
+        font-size: 1.125em;
+        margin-top: 1.25em; /* Ajuste o espaço entre o botão e outros elementos */
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
+    .secao-faleconosco {
+        height: auto; /* Defina uma altura mais apropriada ou deixe-a automática */
+    }
+}
+
+/* Ajustes para tela em formato paisagem */
+@media (max-width: 62em) and (orientation: landscape) {
+    .formulario {
+        width: 90%;
+        flex-wrap: wrap;
+        margin-left: 0.625em;
+        margin-right: 0.625em;
+    }
+    .titulo-form, .caixa-form, .caixa-msg {
+        width: 90%;
+    }
+    .botao-enviar {
+        width: 90%;
+        justify-content: center;
+        font-size: 1.125em;
+        margin-top: 1.25em; /* Ajuste o espaço entre o botão e outros elementos */
+    }
     .secao-faleconosco {
         height: auto; /* Defina uma altura mais apropriada ou deixe-a automática */
     }
@@ -381,29 +486,41 @@ th, td{
     background-color: #3F3F3F;
     display: flex;
     align-items: center;
-    height: 108px;
+    height: 6.75em;
 }
 
 .texto-rodape{
     color: #FFFFFF;
-    font-size: 20px;
-    margin-left: 30px;
+    font-size: 1.25em;
+    margin-left: 1.875em;
 }
 
 /*************************Inicio do Design Responsivo*************************/
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .rodape {
         flex-direction: column; /* Coluna em vez de linha */
         align-items: flex-start; /* Alinhamento à esquerda */
-        padding: 10px;
+        padding: 0.625em;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48em) {
     .texto-rodape {
-        font-size: 16px; /* Reduza o tamanho da fonte */
+        font-size: 1em; /* Reduza o tamanho da fonte */
     }
 }
 
+/* Ajustes para tela em formato paisagem */
+@media (max-width: 62em) and (orientation: landscape) {
+    .rodape {
+        flex-direction: row; /* De volta ao layout em linha */
+        align-items: center; /* Alinhamento centralizado */
+        padding: 0.625em;
+    }
+
+    .texto-rodape {
+        font-size: 1em; /* Mantenha o tamanho da fonte para paisagem */
+    }
+}
 /*************************Fim do Design Responsivo*************************/
