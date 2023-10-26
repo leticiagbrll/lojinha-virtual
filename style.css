@@ -285,7 +285,8 @@ th, td{
     }
 
     .produtos-da-loja li {
-        margin: 0; /* Remova as margens para ter apenas um produto por linha */
+        margin-left: 10px;
+        margin-right: 10px;
         width: 100%; /* Cada produto em sua própria coluna (linha) */
         height: auto; /* Altura automática para se ajustar ao conteúdo */
     }
@@ -310,6 +311,7 @@ th, td{
     }
     .estrutura-comentarios {
         flex-wrap: wrap;
+        gap: 10px;
     }
     .feedback {
         width: 100%;
@@ -350,6 +352,8 @@ th, td{
     .formulario {
         width: 100%;
         flex-wrap: wrap;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .titulo-form, .caixa-form, .caixa-msg {
         width: 100%;
@@ -359,7 +363,7 @@ th, td{
 @media (max-width: 768px) {
     .botao-enviar {
         width: 100%;
-        padding: 10px 15px;
+        padding: 15px 20px;
         font-size: 18px;
         margin-top: 20px; /* Ajuste o espaço entre o botão e outros elementos */
     }
