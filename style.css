@@ -285,8 +285,7 @@ th, td{
     }
 
     .produtos-da-loja li {
-        padding-left: 10px;
-        padding-right: 10px;
+        margin: auto;
         width: 100%; /* Cada produto em sua própria coluna (linha) */
         height: auto; /* Altura automática para se ajustar ao conteúdo */
     }
@@ -350,23 +349,22 @@ th, td{
 
 @media (max-width: 768px) {
     .formulario {
-        width: 100%;
+        width: 90%;
         flex-wrap: wrap;
         margin-left: 10px;
         margin-right: 10px;
     }
     .titulo-form, .caixa-form, .caixa-msg {
-        width: 100%;
+        width: 90%;
     }
 }
 
 @media (max-width: 768px) {
     .botao-enviar {
-        width: 100%;
-        padding: 10px 15px;
+        width: 90%;
+        justify-content: center;
         font-size: 18px;
         margin-top: 20px; /* Ajuste o espaço entre o botão e outros elementos */
-        margin-left: 10px;
     }
 }
 
