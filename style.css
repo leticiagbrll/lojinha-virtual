@@ -35,25 +35,16 @@ a {
     text-transform: uppercase;
 }
 
-
-@media (max-width: 47.938em) {
-    .header {
-      flex-wrap: wrap;
-      gap: 30px;
-      justify-content: center;
-      padding-left: 20px;
-      padding-right: 20px;
+/*************************Início do Design Responsivo*************************/
+@media (max-width: 768px) {
+    .lista-menu {
+        margin-right: 0;
     }
-  
-    .navegacao-menu ul {
-      gap: 10px;
+    .info-usuario {
+        margin-left: 10px;
     }
-  
-    .navegacao-menu li {
-      padding: 4px 7px;
-      font-size: 12px;
-    }
-  }
+}
+/*************************Fim do Design Responsivo*************************/
 
 /*MAIN*/
 /**NOVA COLEÇÃO**/
@@ -210,19 +201,6 @@ th, td{
     border-collapse: collapse;
 }
 
-
-@media (max-width:1025px) {
-    th, td {
-      min-width: 100px;
-    }
-  }
-  
-  @media (max-width:640px) {
-    th, td {
-      min-width: 25px;
-    }
-  }
-
 /**FALE CONOSCO**/
 .secao-faleconosco{
     background-color: #AEBFEB;
@@ -294,6 +272,93 @@ th, td{
     font-weight: 400;
 }
 
+/*************************Inicio do Design Responsivo*************************/
+
+/**Nova Coleção**/
+@media (max-width: 768px) {
+    .titulo-principal {
+        font-size: 32px;
+        padding-top: 15px;
+    }
+    .subtitulo-principal {
+        font-size: 28px;
+        padding-bottom: 10px;
+    }
+    .produtos-da-loja {
+        flex-wrap: wrap;
+    }
+    .produtos-da-loja li {
+        margin: 10px;
+        width: calc(50% - 20px);
+    }
+}
+
+/**Clientes**/
+@media (max-width: 768px) {
+    .titulo-sessao {
+        font-size: 28px;
+    }
+    .estrutura-comentarios {
+        flex-wrap: wrap;
+    }
+    .feedback {
+        width: 100%;
+    }
+    .nome-cliente {
+        font-size: 24px;
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .data-feedback {
+        font-size: 16px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/*Pedidos*/
+
+@media (max-width: 768px) {
+    .tabela {
+        overflow-x: auto;
+    }
+    th, td {
+        padding-left: 5px;
+        padding-top: 10px;
+        padding-bottom: 12px;
+        font-size: 14px;
+    }
+}
+
+/*Fale Conosco*/
+
+@media (max-width: 768px) {
+    .formulario {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .titulo-form, .caixa-form, .caixa-msg {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .botao-enviar {
+        width: 100%;
+        padding: 10px 15px;
+        font-size: 18px;
+        margin-top: 20px; /* Ajuste o espaço entre o botão e outros elementos */
+    }
+}
+
+@media (max-width: 768px) {
+    .secao-faleconosco {
+        height: auto; /* Defina uma altura mais apropriada ou deixe-a automática */
+    }
+}
+
+/*************************Fim do Design Responsivo*************************/
+
 /*RODAPÉ*/
 .rodape{
     background-color: #3F3F3F;
@@ -307,3 +372,21 @@ th, td{
     font-size: 20px;
     margin-left: 30px;
 }
+
+/*************************Inicio do Design Responsivo*************************/
+
+@media (max-width: 768px) {
+    .rodape {
+        flex-direction: column; /* Coluna em vez de linha */
+        align-items: flex-start; /* Alinhamento à esquerda */
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .texto-rodape {
+        font-size: 16px; /* Reduza o tamanho da fonte */
+    }
+}
+
+/*************************Fim do Design Responsivo*************************/
